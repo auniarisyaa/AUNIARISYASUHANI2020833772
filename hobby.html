@@ -1,0 +1,334 @@
+<html>
+<head>
+<link href="assets/css/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 10;
+  font-family:Trebuchet MS, Sans-Serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #af804f;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px 65px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #af804f;
+  color: ivory;
+}
+
+.topnav a.active {
+  background-color: #af804f;
+  color: ivory;
+}
+</style>
+</head>
+<body>
+<a name="MY_FIRST_ANCHOR"> </a>
+
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="biodata.html">Biodata</a>
+  <a href="education.html">Education</a>
+  <a href="hobby.html">Hobby</a>
+  <a href="family.html">Family</a>
+  <a href="gallery.html">Gallery</a>
+    
+  
+</div>
+<center>
+<div class="container5">
+      <div class="image">
+        <img src="assets/image/feast.png">
+</div>
+
+<div class="text" style="color:black;">
+        <h1>Here's Things I Love <br> To Do</h1>
+      </div>
+
+     </center>
+ 
+ <br><br><br>         
+ <hr> <br> 
+
+<div style="text-align:center">
+  <h2>Main Hobby</h2>
+  <p>Find out more below:</p>
+</div>
+
+<!-- Three columns -->
+<center>
+<div class="row" width="100%">
+  <div class="column" onclick="openTab('b1');" style="background:#c19a6b;">
+<h2>Video Editing</h2>
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#D0B49F;">
+<h2>Poetry</h2>
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#AB6B51;">
+<h2>Painting</h2>
+  </div>
+</div>
+</center>
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:#c19a6b">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>A person who loves to edit video especially about kpop mvs and kdrama</h3>
+  <p>I edited a lot of videos. Even add some lyrics to the video to match the background video. Here are some platforms that used to edit videos;</p><br>
+<ol type="1"> 
+  <li>VLLO</li>
+  <li>CapCut</li>
+  <li>InShot</li>
+</ol> 
+</div> 
+
+<div id="b2" class="containerTab" style="display:none;background:#D0B49F">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>A person who loves to write poetrys about life</h3>
+  <p>Start writing poetrys since 2016. I feel I can express my feelings through the poem. So I continue to write poems until now. You can read few poems I made below.</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:#AB6B51">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>A person with an average talent of painting</h3>
+  <p>I really loves to paint especially using water color or poster color. Eventhough I am not too good in painting, I really loves to do it since its improve my skill. Besides, I also tried digital painting. Below are list of art style that I love;</p><br>
+<ul>
+  <li>Surrealism Art</li>
+  <li>Emotional Art</li>
+  <li>Installation Art</li>
+</ul>  
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+<br><br><br>
+<center>
+<h1> My favourite edit</h1>
+
+<center>
+<video width="40%" height="40%" autoplay controls loop muted>
+  <source src="assets/video/+u.mp4" type="video/mp4">
+</video>
+<p>Title: +U </p>
+
+
+<br><br>
+<video width="40%"  autoplay controls loop muted>
+  <source src="assets/video/btsuniverse.mp4" type="video/mp4">
+</video>
+<p>Title: BTS Universe </p>
+
+<br><br>
+<video width="40%"  autoplay controls loop muted>
+  <source src="assets/video/epiphany.mp4" type="video/mp4">
+</video>
+<p>Title: Epiphany </p>
+
+<br><br><br>
+<hr>
+<br>
+<h1> Self-made poem & quotes </h1>
+
+</center>
+
+
+<div class="row">
+  <div class="column">
+    <img src="assets/image/q1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/image/q2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/image/q3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/image/q4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/image/q1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/image/q2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/image/q3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/image/q4.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="assets/image/q1.png" style="width:100%" onclick="currentSlide(1)" alt="POETRY">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/image/q2.png" style="width:100%" onclick="currentSlide(2)" alt="POETRY">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/image/q3.png" style="width:100%" onclick="currentSlide(3)" alt="QUOTES">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/image/q4.png" style="width:100%" onclick="currentSlide(4)" alt="QUOTES">
+    </div>
+  </div>
+</div>
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+ <br><br>   
+<hr>
+<br><br>
+<h1> Digital Art </h1>
+<center>
+<img src="assets/image/jiminart.jpg" width="25%" height="70%"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br>
+
+    <b><hr></b>
+
+<a href="#MY_FIRST_ANCHOR"> <img src="assets/image/button.png" width="50"> </a>
+<footer>
+ 
+<center>
+
+
+<h4> Follow me here >> </h4>
+<a href="https://twitter.com/1995__december?s=11&t=mG2nunM0xHjwMIluqOXu8Q" target="_blank"> <img src="assets/image/cheese.png" width="80px" heigh="80px"></a>
+
+<a href="https://instagram.com/heyaarly?igshid=YWJhMjlhZTc=" target="_blank"> <img src="assets/image/croissant.png" width="80px" heigh="80px"></a>
+
+<a href= "https://wa.me/60195250783/" target="_blank"> <img src="assets/image/gyeran.png" width="80px" heigh="80px"></a>
+
+<br><br>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
